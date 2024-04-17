@@ -1,0 +1,68 @@
+
+///////////////////////////Upload local files to github//////////////////////
+
+Note: (Upload the file under 100MB not greater, keep remember!)
+
+1st-generat public/private rsa key pair
+run -> ssh-keygen -t rsa -b 4096 -C "techroof360@gmail.com"
+
+2nd-Press enter, enter, enter to choose default directory to creat
+public/private key of PC
+
+3rd-give below command to create agent pid
+run -> eval $(ssh-agent -s)
+
+4th-if above not work use below command
+run -> start-ssh-agent.cmd
+
+4th-add identity 
+run -> ssh-add ~/.ssh/id_rsa
+
+5th-Copy the public key and go git setting -> SSH / GPG keys. give title and paste key there and save.
+run -> clip < ~/.ssh/id_rsa.pub
+
+6th-Go that folder and open gitbash, Initialize the git which folder you want to upload
+run -> git init
+
+7th-Add the folder
+run -> git add -A
+
+8th-get first commit to make file
+run -> git commit -m "first commit"
+
+9th-Go to the git click SSH and get git link for folder
+run -> git remote add origin git@github.com:techroof360/web-profile.git
+
+10th-Now push the code to git by command
+run -> git push origin master
+
+//Git command to upload project
+git init
+git add .
+git commit -m "first commit"
+git status
+git branch -M 'main'
+git remote add origin https://github.com/techroof360/cricting.git
+git push -u origin 'main'
+npm install gh-pages --save-dev
+npm run deploy
+
+//Add globally if you're not there by below command
+run -> git config --global user.email "xyz@gmail.com"
+run -> git config --global user.name "your name"
+
+//if not pushing code
+git push -f origin 'main'
+
+//add new branch
+git checkout -b v1.0
+git add .
+git push origin v1.0
+
+//Clone project sub branch
+git clone -b v1.0 https://github.com/techroof360/cricting.git
+
+//Confirming is it right branch
+git branch
+
+https://medium.com/devops-with-valentine/2021-how-to-set-up-your-ssh-key-for-github-on-windows-10-afe6e729a3c0

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+.mycaro {
+    height: 400px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+
+}
+.online{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    
+}
+.products{
+    height: 200px;
+    
+}
+.heading-1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.slidering{
+    height: 400px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
